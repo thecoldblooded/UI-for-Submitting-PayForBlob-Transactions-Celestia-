@@ -22,4 +22,6 @@ screen -S web_server
 python3 web_server.py
 ```
 
+![image](https://user-images.githubusercontent.com/9271266/235225719-8ce14876-7980-4bf6-952e-6edbebd730db.png)
+
 DONE!
