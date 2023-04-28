@@ -17,6 +17,7 @@ Make a directory called `dashboard` and retrieve the file `index.html`.
 mkdir dashboard
 cd dashboard
 wget https://raw.githubusercontent.com/thecoldblooded/UI-for-Submitting-PayForBlob-Transactions-Celestia-/main/index.html
+wget https://raw.githubusercontent.com/thecoldblooded/UI-for-Submitting-PayForBlob-Transactions-Celestia-/main/blob.sh
 cd ..
 screen -S web_server
 python3 web_server.py
