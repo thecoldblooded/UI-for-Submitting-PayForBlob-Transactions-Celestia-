@@ -8,7 +8,7 @@ pip install flask
 Download `web_server.py`
 
 ```
-https://raw.githubusercontent.com/thecoldblooded/UI-for-Submitting-PayForBlob-Transactions-Celestia-/main/blob.sh
+wget https://raw.githubusercontent.com/thecoldblooded/UI-for-Submitting-PayForBlob-Transactions-Celestia-/main/blob.sh
 ```
 
 Make a directory called `dashboard` and retrieve the file `index.html`.
