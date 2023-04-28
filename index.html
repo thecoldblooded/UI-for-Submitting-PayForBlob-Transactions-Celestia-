@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carry out transactions for PayForBlob</title>
+
+    <style>
+        h1 
+        {
+            font-size: 2.5rem;
+            text-align: left;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        button 
+        {
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background-color: #4c58af;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover 
+        {
+            background-color: #232d74;
+        }
+
+        pre 
+        {
+            background-color: #f7f7f700;
+            border: 0;
+            padding: 1rem;
+            margin: 2rem auto;
+            max-width: 80%;
+            font-size: 1.2rem;
+        }
+    </style>
+
+    <script>
+        async function executeCommand() 
+        {
+            alert("Transaction is in progress. Please wait...");
+            const executeResponse = await fetch('/run_command', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'command=sudo /bin/bash blob.sh'
+            });
+
+            const outputElement = document.getElementById('output');
+            if (executeResponse.ok) 
+            {
+                const output = await executeResponse.text();
+                outputElement.textContent = '\n' + output;
+            } else {
+                outputElement.textContent = 'Error occurred';
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Carry out transactions for PayForBlob</h1>
+    <button onclick="executeCommand()">Do it now!</button>
+    <pre id="output"></pre>
+</body>
+</html>
