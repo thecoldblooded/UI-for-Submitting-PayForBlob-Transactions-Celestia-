@@ -25,3 +25,11 @@ python3 web_server.py
 ![image](https://user-images.githubusercontent.com/9271266/235225719-8ce14876-7980-4bf6-952e-6edbebd730db.png)
 
 DONE!
+
+to test it;
+
+![image](https://user-images.githubusercontent.com/9271266/235225952-8faa8f3d-ce9e-4bcf-ae18-ea23e87ee772.png)
+
+hit "Do it now!"
+
+![image](https://user-images.githubusercontent.com/9271266/235226058-158f0235-92c4-44ed-a2a5-a916ab7e4586.png)
