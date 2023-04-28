@@ -42,7 +42,4 @@ RESULT;
 
 check -> https://testnet.mintscan.io/celestia-incentivized-testnet/txs/92CCD151463D2E751E1FA5F6092B50ACD60931C8A69DC5D0BDA2A3E4AC446130
 
-
-
-
-
+![image](https://user-images.githubusercontent.com/9271266/235249185-f63ebf54-36fb-430d-932d-aa047b4c76f6.png)
